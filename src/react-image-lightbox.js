@@ -319,7 +319,7 @@ class ReactImageLightbox extends Component {
   getFitSizes(width, height, stretch) {
     const boxSize = this.getLightboxRect();
     let maxHeight = boxSize.height - this.props.imagePadding * 2;
-    let maxWidth = boxSize.width - this.props.imagePadding * 2;
+    let maxWidth = boxSize.width;
 
     if (!stretch) {
       maxHeight = Math.min(maxHeight, height);
